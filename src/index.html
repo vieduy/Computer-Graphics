@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Đồ họa máy tính</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- <script src="https://threejsfundamentals.org/threejs/resources/threejs/r127/examples/jsm/controls/OrbitControls.js"></script> -->
+
+    <script type="text/javascript" charset="UTF-8" src="../libs/three/three.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="../libs/three/controls/TrackballControls.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="../libs/three/renderers/CanvasRenderer.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="../libs/three/renderers/Projector.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="../libs/three/loaders/OBJLoader.js"></script>
+    <script type="text/javascript" src="../libs/util/Stats.js"></script>
+    <script type="text/javascript" src="../libs/util/dat.gui.js"></script>
+
+
+    <script type="text/javascript" src="./js/util.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <!-- <script type="module" src="./js/teapot.js"></script> -->
+
+    <link rel="stylesheet" href="../css/default.css">
+
+    <style>
+        #gui {
+            position: absolute;
+            top: 2em;
+            right: 0px
+        }
+        
+        #file-input {
+            display: none;
+        }
+        
+        #moveGUI {
+            position: absolute;
+            top: 2em;
+            left: 0px;
+        }
+        
+        #optionGUI {
+            position: absolute;
+            top: 2em;
+            right: 2em;
+        }
+        
+        #modeGUI {
+            position: absolute;
+            top: 50em;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="moveGUI"></div>
+    <div id="optionGUI"></div>
+    <div id="modeGUI"></div>
+
+    <div id="webgl-output"></div>
+    <canvas id="c"></canvas>
+    <input type="file" id="file-input" accept="image/*" />
+    <script type="text/javascript">
+        (function() {
+            init()
+        })();
+    </script>
+</body>
+
+</html>
